@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login - Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img src="logo.png" alt="logo" class="left"></a>
+        <ul class="right">
+            
+            <li><a href="index.html">ExpenseTrackr</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="expenses.html">Expenses</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <!-- Add any other required menu items -->
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Create an Account</h1>
+
+        <form>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>

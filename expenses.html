@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html"><img src="logo.png" alt="logo" class="left"></a>
+        <ul class="right">
+            
+            <li><a href="index.html">ExpenseTrackr</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="expenses.html">Expenses</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <!-- Add any other required menu items -->
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <form>
+            <label for="expense-amount">Amount:</label>
+            <input type="number" id="expense-amount" name="expense-amount" placeholder="Enter amount" required>
+
+            <label for="expense-category">Category:</label>
+            <input type="text" id="expense-category" name="expense-category" placeholder="Enter category" required>
+
+            <label for="expense-description">Description:</label>
+            <textarea id="expense-description" name="expense-description" placeholder="Enter description"></textarea>
+
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <div class="expense-list">
+            <h2>Expense List</h2>
+            <ul>
+                <li>
+                    <span class="expense-amount">-$25.00</span>
+                    <span class="expense-category">Food</span>
+                    <span class="expense-description">Lunch</span>
+                    <button class="edit-button">Edit</button>
+                    <button class="delete-button">Delete</button>
+                </li>
+                <li>
+                    <span class="expense-amount">-$50.00</span>
+                    <span class="expense-category">Transportation</span>
+                    <span class="expense-description">Metro ticket</span>
+                    <button class="edit-button">Edit</button>
+                    <button class="delete-button">Delete</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
